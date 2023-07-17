@@ -1,0 +1,296 @@
+@import "_vars.scss";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $colorBlack;
+}
+
+p {
+    font-family: "Jost", sans-serif;
+    color: $colorText;
+}
+
+.center {
+    padding-left: calc(50% - 1227px/2);
+    padding-right: calc(50% - 1227px/2);
+}
+
+.header {
+    padding-top: 53px;
+    padding-bottom: 25px;
+    min-height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__link-site {
+        transition: 0.5s;
+        height: 25px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+    }
+}
+
+.categoryPage {
+    &__center {
+        position: relative;
+        height: 350px;
+        overflow: hidden;
+        display: flex;
+        margin-bottom: 150px;
+
+        &__backImg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 356px;
+            background-image: url(@/assets/Photo-6.svg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &__content {
+            position: relative;
+            top: 179px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 504px;
+            height: 178px;
+            background-color: white;
+            border-top-left-radius: 37px;
+            border-top-right-radius: 37px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        &__heading {
+            height: 63px;
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 62.5px;
+            display: flex;
+            align-items: center;
+            color: $colorBlack;
+        }
+
+        &__text {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: $colorText;
+        }
+    }
+}
+
+.button-group {
+    display: flex;
+    overflow: hidden;
+}
+
+.category {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22.5px;
+    flex: 1;
+    gap: 10px;
+    padding: 26px 66px;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.category.active {
+    background-color: #CDA274;
+    color: #fff;
+    border-radius: 18px;
+}
+
+.projects-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 65px;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    justify-content: space-between;
+}
+
+.project {
+    width: calc(50% - 100px);
+    margin-bottom: 20px;
+}
+
+.projectDetailsPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 1200px;
+    margin-bottom: 200px;
+
+    &__banner {
+        margin-bottom: 150px;
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    &__top {
+        max-width: 650px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    &__title {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__details {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+    }
+}
+
+
+.footer {
+    display: flex;
+    min-height: 79px;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    padding-top: 53px;
+
+    &__statement {
+        margin-top: 18px;
+        width: 393px;
+        height: 66px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+        color: $colorText;
+    }
+
+    &__heading {
+        width: 64px;
+        height: 31px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        color: $colorBlack;
+        padding-bottom: 9px;
+    }
+
+    &__center {
+        margin-left: 101px;
+        margin-right: 350px;
+    }
+
+    &__pages {
+        flex-direction: column;
+        width: 72px;
+        height: 198px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 66px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+        color: $colorText;
+        align-items: flex-start;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__contacts {
+        margin-top: 26px;
+        width: 258px;
+        height: 215px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: $colorText;
+    }
+
+    &__email {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    &__info {
+        margin-top: 31px;
+        display: flex;
+        gap: 54px;
+    }
+
+
+}
