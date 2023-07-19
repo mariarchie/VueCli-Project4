@@ -36,6 +36,7 @@ p {
     &__left {
         display: flex;
         align-items: flex-end;
+        gap: 10px;
     }
 
     &__right {
@@ -158,6 +159,29 @@ p {
 .project {
     width: calc(50% - 100px);
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 580px;
+    cursor: pointer;
+    &__name {
+        margin-left: 0;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    &__type {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+    }
+}
+
+.project.no-bullet {
+    list-style: none;
 }
 
 .projectDetailsPage {
@@ -201,13 +225,18 @@ p {
     }
 }
 
-
 .footer {
     display: flex;
     min-height: 79px;
     flex-wrap: wrap;
     margin-bottom: 120px;
     padding-top: 53px;
+
+    &__logo {
+        display: flex;
+        gap: 10px;
+        align-items: flex-end;
+    }
 
     &__statement {
         margin-top: 18px;

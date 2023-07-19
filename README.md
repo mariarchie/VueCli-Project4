@@ -1,4 +1,7 @@
-# third-project
+# Vue Router app
+
+To navigate to the ProductDetails page, please click the *Minimal Look Bedrooms* field in *Bed Room* category.
+
 
 ## Project setup
 ```

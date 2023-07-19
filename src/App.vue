@@ -1,28 +1,20 @@
 <template>
-  <div id="app">
-    <PageHeader />
-    <div class="projectDetailsPage__center">
-      <ProjectDetails />
-    </div>
-    <PageFooter />
+  <div>
+    <Header />
+    <router-view></router-view>
+    <Footer />
   </div>
 </template>
 
 <script>
-import PageHeader from './components/PageHeader.vue';
-import ProjectDetails from './components/ProjectDetails.vue';
-import PageFooter from './components/PageFooter.vue';
+import Header from './components/PageHeader.vue';
+import Footer from './components/PageFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    PageHeader,
-    ProjectDetails,
-    PageFooter,
+    Header,
+    Footer,
   },
 };
 </script>
-
-<style lang="scss">
-@import "@/styles/style.scss";
-</style>
